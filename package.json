@@ -1,0 +1,32 @@
+{
+  "name": "@microstep/tests",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/tests.js",
+  "types": "dist/tests.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "dist/bin.js tst/test.js"
+  },
+  "bin": {
+    "mstests": "./dist/bin.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.logitud.fr:Recherche/Tests.js.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@microstep/async": "^0.1.1",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.38",
+    "@types/node": "^7.0.0",
+    "typescript": "^2.1.4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "umd",
+        "lib": [ "es6", "dom" ],
+        "target": "es5",
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "strictNullChecks": true,
+        "outDir": "./dist",
+        "declaration": true,
+        "moduleResolution": "node",
+        "types": ["mocha", "node"]
+    },
+    "files": [
+        "src/tests.ts",
+        "src/bin.ts"
+    ]
+}
