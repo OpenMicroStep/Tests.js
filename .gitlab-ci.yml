@@ -13,6 +13,7 @@ build:
      - dist/
 
 test:
+  dependencies: build
   script:
    - npm install --production
    - npm test
