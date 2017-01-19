@@ -4,6 +4,7 @@ before_script:
  - npm set registry $NPM_REGISTRY
 
 build:
+  stage: build
   script:
    - npm install -q
    - npm run build
@@ -13,7 +14,9 @@ build:
      - dist/
 
 test:
-  dependencies: build
+  stage: test
+  dependencies: 
+   - build
   script:
    - npm install -q --production
    - npm test
