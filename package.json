@@ -6,7 +6,7 @@
   "types": "dist/tests.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "dist/bin.js tst/test.js"
+    "test": "node dist/bin.js tst/test.js"
   },
   "bin": {
     "mstests": "./dist/bin.js"
