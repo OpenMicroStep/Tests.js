@@ -5,7 +5,7 @@ before_script:
 
 build:
   script:
-   - npm install
+   - npm install -q
    - npm run build
   artifacts:
     expire_in: 31d
@@ -15,5 +15,5 @@ build:
 test:
   dependencies: build
   script:
-   - npm install --production
+   - npm install -q --production
    - npm test
