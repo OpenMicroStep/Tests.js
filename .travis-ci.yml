@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "6"
+
+script:
+  - npm install -q
+  - npm run build
+  - rm -r node_modules/
+  - npm install -q --production
+  - npm test
