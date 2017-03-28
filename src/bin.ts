@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {Async} from '@microstep/async';
+import {Async} from '@openmicrostep/async';
 import {run} from './tests';
 let Module = require('module');
 let req = Module.prototype.require;

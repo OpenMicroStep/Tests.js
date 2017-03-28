@@ -1,4 +1,4 @@
-import { Flux, Async } from '@microstep/async';
+import { Flux, Async } from '@openmicrostep/async';
 
 export type Test<T> = Direct<T> | Parent<T>;
 export type Method<T> = (flux?: Flux<T>) => void
